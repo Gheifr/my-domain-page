@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ІнфоПроцес - Обробка Інформації для Вашого Успіху</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+            position: relative; /* Додано для позиціонування contact-us відносно body */
+        }
+
+        header {
+            background-image: url('./backgrnd.jpg'); /* Замініть на фактичний шлях до файлу */
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center center;
+            color: white;
+            padding: 20px;
+            text-align: center;
+            min-height: 200px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        nav {
+            background-color: #333;
+            color: white;
+            padding: 10px;
+            text-align: center;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            padding: 10px 20px;
+            margin: 0 10px;
+        }
+
+        .logo-container {
+            display: flex;
+            justify-content: center;
+            margin-bottom: 20px;
+        }
+
+        .logo {
+            width: 150px;
+            height: auto;
+        }
+
+        .main-content {
+            padding: 20px;
+            flex-grow: 1;
+        }
+
+        .company-info {
+            margin-bottom: 30px;
+        }
+
+        .contact-us {
+            background-color: #ddd;
+            padding: 15px;
+            position: fixed;
+            bottom: 20px;
+            left: 20px;
+            border-radius: 5px;
+        }
+
+        .contact-us h2 {
+            margin-top: 0;
+            font-size: 1.2em;
+        }
+
+        .qr-code {
+            width: 80px;
+            height: 80px;
+            margin-top: 10px;
+        }
+
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 10px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>ІнфоПроцес</h1>
+        <p>Ваш надійний партнер у сфері обробки інформації</p>
+    </header>
+
+    <nav>
+        <a href="#">Головна</a>
+        <a href="#">Послуги</a>
+        <a href="#">Про нас</a>
+        <a href="#">Контакти</a>
+    </nav>
+
+    <div class="main-content">
+        <div class="company-info">
+            <h2>Про компанію ІнфоПроцес</h2>
+            <p>Ми - команда професіоналів, які спеціалізуються на ефективній обробці та аналізі інформації. Наші передові рішення допомагають бізнесам приймати обґрунтовані рішення та оптимізувати свої процеси.</p>
+            <ul>
+                <li>Збір та систематизація даних</li>
+                <li>Аналіз великих обсягів інформації (Big Data)</li>
+                <li>Візуалізація даних та створення звітів</li>
+                <li>Розробка індивідуальних програмних рішень</li>
+            </ul>
+        </div>
+
+        <div>
+            <h2>Наші послуги</h2>
+            <p>ІнфоПроцес пропонує широкий спектр послуг, спрямованих на покращення роботи з інформацією у вашій компанії.</p>
+            <ol>
+                <li>Консалтинг у сфері управління даними</li>
+                <li>Впровадження систем обробки даних</li>
+                <li>Навчання та підтримка користувачів</li>
+                <li>Аудит інформаційних систем</li>
+            </ol>
+        </div>
+    </div>
+
+    <div class="contact-us">
+        <h2>Contact Us</h2>
+        <p>Зв'яжіться з нами для отримання консультації:</p>
+        <p>Email: info@infoprocess.com</p>
+        <p>Телефон: +49 123 456 789</p>
+        <img src="https://api.qrserver.com/v1/create-qr-code/?size=80x80&data=mailto:info@infoprocess.com" alt="QR Code Email" class="qr-code">
+    </div>
+
+    <footer>
+        <p>&copy; 2025 ІнфоПроцес. Всі права захищено.</p>
+    </footer>
+</body>
+</html>
