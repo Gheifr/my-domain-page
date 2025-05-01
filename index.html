@@ -71,7 +71,7 @@
             padding: 15px;
             position: fixed;
             bottom: 20px;
-            left: 20px;
+            right: 20px;
             border-radius: 5px;
         }
 
@@ -136,7 +136,7 @@
         <p>Зв'яжіться з нами для отримання консультації:</p>
         <p>Email: info@infoprocess.com</p>
         <p>Телефон: +49 123 456 789</p>
-        <img src="https://api.qrserver.com/v1/create-qr-code/?size=80x80&data=mailto:info@infoprocess.com" alt="QR Code Email" class="qr-code">
+        <img id="qrCodeImage" src="/show_qr.png" alt="QR Code" class="qr-code">
     </div>
 
     <footer>
@@ -144,3 +144,11 @@
     </footer>
 </body>
 </html>
+
+<script>
+    const qrCodeImage = document.getElementById('qrCodeImage');
+  
+    qrCodeImage.onerror = function() {
+      qrCodeImage.src = '/def_qr.png';
+    };
+  </script>
